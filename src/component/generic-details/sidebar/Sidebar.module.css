@@ -1,0 +1,62 @@
+.menu {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 20;
+
+    width: 100px;
+    height: 90%;
+    padding-top: 50px;
+
+    background-color: #212529;
+    color: white;
+
+    text-align: center;
+    transition: .3s linear;
+
+    animation: slide-left 600ms ease-out forwards;
+}
+
+.section {
+
+}
+
+.title {
+    color: #ffd166;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.item {
+    margin-bottom: 5px;
+    transition: .3s linear;
+}
+
+.item:hover {
+    border-bottom: 1px solid #ffd166;
+
+}
+
+.link {
+    text-decoration: none;
+
+    transition: .2s linear;
+    color: white;
+    font-size: 16px;
+}
+
+.link:hover {
+    color: #ffd166;
+}
+
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
